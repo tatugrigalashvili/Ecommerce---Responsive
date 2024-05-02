@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+</head>
+<body>
+    <!--first slide-->
+    <div class="first_slide">
+        <!--heading-->
+        <div class="heading">
+            <!--store-->
+            <div class="find">
+                <!--image-->
+                <img src="lokacia.png" alt="lokacia">
+                <!--end image-->
+
+                <!--text-->
+                <p>Find a Store</p>
+                <!--end text-->
+            </div>
+            <!--end store-->
+
+            <!--socials-->
+            <div class="socials">
+                <img src="List → Item → Link.png" alt="1">
+                <img src="List → Item → Link (1).png" alt="2">
+                <img src="List → Item → Link (2).png" alt="3">
+                <img src="List → Item → Link (3).png" alt="4">
+            </div>
+            <!--end socials-->
+        </div>
+        <!--end heading-->
+
+        <!--search line-->
+        <div class="search_line">
+            <!--logo-->
+            <svg width="150" height="41" viewBox="0 0 150 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="150" height="40" transform="translate(0 0.390137)" fill="url(#pattern0_1_414)"/>
+                <defs>
+                <pattern id="pattern0_1_414" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_1_414" transform="scale(0.00555556 0.0208333)"/>
+                </pattern>
+                <image id="image0_1_414" width="180" height="48" xlink:href="data:image/png;base64,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"/>
+                </defs>
+                </svg>
+            <!--end logo-->
+
+            <!--search-->
+            <div class="search">
+                <!--input-->
+                <input type="search" placeholder="What are you looking for?">
+                <!--end input-->
+
+                <!--button-->
+                <button>Search</button>
+                <!--end button-->
+            </div>
+            <!--end search-->
+
+                <!--hotline-->
+                <div class="hotline">
+                    <!--img-->
+                    <img src="div.haru-header-contact__icon.png" alt="123">
+                    <!--end img-->
+
+                    <!--text-->
+                    <div>
+                        <p class="bold"><b>Hotline:19008188</b></p>
+                        <p class="order">Pickup your order for free</p>
+                    </div>
+                    <!--end text-->
+                </div>
+                <!--end hotline-->
+
+                <!--images-->
+                <div class="images">
+                    <img src="adamiani.png" alt="123">
+                    <img src="star.png" alt="123">
+                    <img src="chanta.png" alt="123">
+                </div>
+                <!--end images-->
+        </div>
+        <!--end search line-->
+
+        <!--more info line-->
+        <div class="info_line">
+
+            <div class="infos">
+            <!--green-->
+            <div class="green">
+                <p>Home</p>
+                <img src="green.png" alt="green">
+            </div>
+            <!--end green-->
+
+            <!--black-->
+            <div class="black">
+                <p>TeeSpace</p>
+                <img src="black.png" alt="black">
+            </div>
+
+            <div class="black">
+                <p>Shop</p>
+                <img src="black.png" alt="black">
+            </div>
+
+            <div class="black">
+                <p>Blog</p>
+                <img src="black.png" alt="black">
+            </div>
+
+            <div class="black">
+                <p>Pages</p>
+                <img src="black.png" alt="black">
+            </div>
+            <!--end black-->
+        </div>
+        <!--end infos-->
+
+            <!--sale-->
+            <div class="sale">
+                <img src="fire.png" alt="fire">
+                <p>Extra</p>
+                <p class="diff">Sale 30%</p>
+                <p>off</p>
+            </div>
+            <!--end sale-->
+        </div>
+        <!--end more info line-->
+
+        <!--main-->
+        <div class="main">
+            <div class="text">
+            <!--title-->
+            <h1>Let's configure you own <br>
+                print product</h1>
+            <!--end title-->
+
+            <img src="Group 14.png" alt="isrebi">
+
+            <p>The easiest way to get your print as you want</p>
+
+            <button>Print Your Own</button>
+        </div>
+        <!--end text-->
+
+        <!--images-->
+        <div class="four_images">
+            <!--first line-->
+            <div class="line1">
+            <img src="1.png" alt="1">
+            <img src="2.png" alt="2">
+        </div>
+            <!--end first line-->
+
+            <!--second line-->
+            <div class="line2">
+            <img src="3.png" alt="3">
+            <img src="4.png" alt="4">
+        </div>
+            <!--second line-->
+
+        </div>
+        <!--end images-->
+        </div>
+        <!--end main-->
+    </div>
+    <!--end first slide-->
+
+
+    <!--second slide-->
+    <div class="second_slide">
+        <!--categories-->
+        <div class="categories">
+            <!--title-->
+            <h1 class="Shopping">Shopping by Categories</h1>
+            <!--end title-->
+
+            <!--clothes-->
+            <div class="clothes">
+                <!--image-->
+                <img src="123.png" alt="123">
+                <!--end image-->
+
+                <!--text-->
+                <div class="categories_text">
+                    <!--first-->
+                    <div>
+                    <p class="txt">T-shirt</p>
+                    <p class="number">15</p>
+                    </div>
+                    <!--end first-->
+
+                    <!--second-->
+                    <div>
+                    <p class="txt">Long-sleeves</p>
+                    <p class="number">8</p>
+                    </div>
+                    <!--end second-->
+
+                    <!--third-->
+                    <div>
+                    <p class="txt">Sweater</p>
+                    <p class="number">18</p>
+                    </div>
+                    <!--end third-->
+
+                    <!--fourth-->
+                    <div>
+                    <p class="txt">Hoodies</p>
+                    <p class="number">9</p>
+                    </div>
+                    <!--end fourth-->
+
+                    <!--fifth-->
+                    <div class="bolo">
+                    <p class="txt">Tanktop</p>
+                    <p class="number">6</p>
+                    </div>
+                    <!--end fifth-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end clothes-->
+        </div>
+        <!--end categories-->
+
+        <!--two box-->
+        <div class="two_div">
+            <!--div1-->
+            <div class="one">
+                <div>
+                <!--title-->
+                <h1>Thousands of <br>
+                    free templates</h1>
+                <!--end title-->
+
+                <!--text-->
+                <p>Free and easy way to bring <br>
+                    your ideas to life</p>
+                <!--end text-->
+
+                <!--button-->
+                <button>
+                    Explore More
+                    <img src="Vector.png" alt="isari">
+                </button>
+                <!--end button-->
+            </div>
+            </div>
+            <!--end div1-->
+
+            <!--div2-->
+            <div class="two">
+                <div>
+                <!--title-->
+                <h1>Create your <br>
+                    unique style</h1>
+                <!--end title-->
+
+                <!--text-->
+                <p>Free and easy way to bring <br>
+                    your ideas to life</p>
+                <!--end text-->
+
+                <!--button-->
+                <button>
+                    Shop Now
+                    <img src="Vector.png" alt="isari">
+                </button>
+                <!--end button-->
+            </div>
+            </div>
+            <!--end div1-->
+        </div>
+        <!--end two box-->
+    </div>
+    <!--end second slide-->
+
+    <!--third slide-->
+    <div class="third_slide">
+        <!--list-->
+        <div class="list">
+            <ul>
+                <li><b>New Arrivals</b></li>
+                <li class="grey"><b>Best Seller</b></li>
+                <li class="grey"><b>Sale</b></li>
+            </ul>
+        </div>
+        <!--end list-->
+
+        <!--clothes-->
+        <div class="collections">
+            <div class="first_line">
+            <!--first-->
+            <div class="collection">
+                <!--image-->
+                <img src="div.product-top1.png" alt="1">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price">
+                    <!--name-->
+                    <p>Zone Sweatshirt</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <p>$19.95 – $159.95</p>
+                    <!--end price-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end first-->
+
+            <!--second-->
+            <div class="collection">
+                <!--image-->
+                <img src="div.product-top 2.png" alt="2">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price">
+                    <!--name-->
+                    <p>Zoo Men’s t-shirt</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <p>$14.95 – $119.95</p>
+                    <!--end price-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end second-->
+
+            <!--third-->
+            <div class="collection">
+                <!--image-->
+                <img src="div.product-top 3.png" alt="3">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price">
+                    <!--name-->
+                    <p>Toddler T-shirt</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <p>$26.00</p>
+                    <!--end price-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end third-->
+
+            <!--fourth-->
+            <div class="collection">
+                <!--image-->
+                <img src="div.product-top 4.png" alt="4">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price">
+                    <!--name-->
+                    <p class="name">Fine Jersey Tee</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <div class="abc">
+                    <p class="green_price">$28.00</p>
+                    <p class="grey_price"><del>$31.00</del></p>
+                    </div>
+                    <!--end price-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end fourth-->
+
+        </div>
+        <!--end first line-->
+
+        <div class="line">
+        <!--title-->
+        <h1>Hot under $39</h1>
+        <!--end title-->
+
+        <!--button-->
+        <button>
+            View All
+            <img src="Vector black.png" alt="black">
+        </button>
+        <!--end button-->
+        </div>
+
+        <!--second line-->
+        <div class="second_line">
+            <!--first-->
+            <div class="collection">
+                <!--image-->
+                <img src="Item1.png" alt="1">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price2">
+                    <!--name-->
+                    <p>Adult Quantity Tee</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <p class="price">$26.00 – $29.00</p>
+                    <!--end price-->
+
+                    <!--colors-->
+                    <div class="colors">
+                        <!--images-->
+                        <img src="dot1.png" alt="1">
+                        <img src="dot2.png" alt="2">
+                        <!--end images-->
+                        <p>+3</p>
+                    </div>
+                    <!--end colors-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end first-->
+
+            <!--second-->
+            <div class="collection">
+                <!--image-->
+                <img src="Item 2.png" alt="2">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price2">
+                    <!--name-->
+                    <p>All-Over-Print Hoodie</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <p class="price">$26.00 – $29.00</p>
+                    <!--end price-->
+
+                    <!--colors-->
+                    <div class="colors">
+                        <!--images-->
+                        <img src="dot1.png" alt="1">
+                        <img src="dot2.png" alt="2">
+                        <!--end images-->
+                        <p>+3</p>
+                    </div>
+                    <!--end colors-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end second-->
+
+            <!--third-->
+            <div class="collection">
+                <!--image-->
+                <img src="Item 3.png" alt="3">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price2">
+                    <!--name-->
+                    <p>AOP Cut & Sew Tee</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <p class="price">$26.00 – $29.00</p>
+                    <!--end price-->
+
+                    <!--colors-->
+                    <div class="colors">
+                        <!--images-->
+                        <img src="dot1.png" alt="1">
+                        <img src="dot2.png" alt="2">
+                        <!--end images-->
+                        <p>+3</p>
+                    </div>
+                    <!--end colors-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end third-->
+
+            <!--fourth-->
+            <div class="collection">
+                <!--image-->
+                <img src="div.product-top 4.png" alt="4">
+                <!--end image-->
+
+                <!--text-->
+                <div class="name_price">
+                    <!--name-->
+                    <p class="name">Fine Jersey Tee</p>
+                    <!--end name-->
+
+                    <!--price-->
+                    <div class="abc">
+                    <p class="green_price">$28.00</p>
+                    <p class="grey_price"><del>$31.00</del></p>
+                    </div>
+                    <!--end price-->
+                </div>
+                <!--end text-->
+            </div>
+            <!--end fourth-->
+        </div>
+        <!--end second line-->
+        </div>
+        <!--end clothes-->
+    </div>
+    <!--end third slide-->
+
+    <!--fourth slide-->
+    <div class="fourth_slide">
+        <!--title-->
+        <h1>How to design and order custom T-shirts</h1>
+        <!--end title-->
+        
+        <!--details-->
+        <div class="details">
+            <!--text-->
+            <div class="chamonatvali">
+                <!--first-->
+                <div class="text1">
+                    <!--image-->
+                    <img src="1..png" alt="1">
+                    <!--end image-->
+
+                    <!--text-->
+                    <p>Choose from 412 custom products in <br>
+                        our catalog</p>
+                    <!--end text-->
+                </div>
+                <!--end first-->
+
+                 <!--second-->
+                 <div class="text1">
+                    <!--image-->
+                    <img src="2..png" alt="2">
+                    <!--end image-->
+
+                    <!--text-->
+                    <p>Customize your design with graphics, <br>
+                        text or your own uploaded images.</p>
+                    <!--end text-->
+                </div>
+                <!--end second-->
+
+                 <!--third-->
+                 <div class="text1">
+                    <!--image-->
+                    <img src="3..png" alt="3">
+                    <!--end image-->
+
+                    <!--text-->
+                    <p>Get your order sent to your door with <br>
+                        free standard shipping.</p>
+                    <!--end text-->
+
+                </div>
+                <!--end third-->
+            </div>
+            <!--end text-->
+
+            <!--image-->
+            <img src="comp.png" alt="computer">
+            <!--end image-->
+        </div>
+        <!--end details-->
+    </div>
+    <!--end fourth slide-->
+
+    <!--fifth slide-->
+    <div class="fifth_slide">
+        <!--gallery-->
+        <!--line-->
+        <div class="line">
+            <!--title-->
+            <h1 class="h1">Free design templates</h1>
+            <!--end title-->
+    
+            <!--button-->
+            <button>
+                View All
+                <img src="Vector black.png" alt="black">
+            </button>
+            <!--end button-->
+            </div>
+        <!--end line-->
+
+        <!--boxes-->
+        <div class="boxes">
+            <!--first-->
+            <div class="box">
+                <!--image-->
+                <img src="Link1.png" alt="1">
+                <!--end image-->
+
+                <!--text-->
+                <h3>Astronauts</h3>
+                <p>85 resources</p>
+                <!--end text-->
+            </div>
+            <!--end first-->
+
+            <!--second-->
+            <div class="box">
+                <!--image-->
+                <img src="Link2.png" alt="2">
+                <!--end image-->
+
+                <!--text-->
+                <h3>Quote that collection</h3>
+                <p>6 resources</p>
+                <!--end text-->
+            </div>
+            <!--end second-->
+
+            <!--third-->
+            <div class="box">
+                <!--image-->
+                <img src="Link3.png" alt="3">
+                <!--end image-->
+
+                <!--text-->
+                <h3>Art Styles</h3>
+                <p>68 resources</p>
+                <!--end text-->
+            </div>
+            <!--end third-->
+
+            <!--fourth-->
+            <div class="box">
+                <!--image-->
+                <img src="28.png" alt="28">
+                <!--end image-->
+            </div>
+            <!--end fourth-->
+        </div>
+        <!--end boxes-->
+
+        <!--end gallery-->
+
+        <!--apps-->
+        <div class="apps">
+            <!--text-->
+            <div>
+                <h2>We integrate with</h2>
+                <button>And more <img src="Vector black.png" alt="black"></button>
+            </div>
+            <!--end text-->
+
+            <!--image-->
+            <img src="List.png" alt="list">
+            <!--end image-->
+        </div>
+        <!--end apps-->
+
+        <!--two div-->
+        <div class="ori-div">
+            <!--first-->
+            <div class="pirveli">
+                <div>
+                <h1>Download our app</h1>
+                <p>Available for iOS and Android</p>
+                </div>
+            </div>
+            <!--first-->
+
+            <!--second-->
+            <div class="meore">
+                <!--title-->
+                <h1>Testimonials</h1>
+                <!--end title-->
+
+                <!--text-->
+                <p class="aaa">“For all your printing prerequisites. Offer to make <br>
+                 and print their pamphlets, business cards, <br>
+                 solicitations, and occasion programs.”</p>
+                <!--end text-->
+
+                <!--person-->
+                <div class="person">
+                    <div class="abcd">
+                    <!--img-->
+                    <img src="Item.png" alt="pfp">
+                    <!--end img-->
+
+                    <!--info-->
+                    <div class="person_info">
+                        <h3>Eddy M.</h3>
+                        <p>Designer at Lift</p>
+                    </div>
+                   </div>
+
+                    <div class="isrebi">
+                        <!--isari1-->
+                        <div class="isari">
+                            <img src="Vector1.png" alt="1">
+                        </div>
+                        <!--end isari1-->
+
+                        <!--isari2-->
+                        <div class="isari">
+                            <img src="Vector2.png" alt="2">
+                        </div>
+                        <!--end isari2-->
+                    </div>
+                    <!--end info-->
+                </div>
+                <!--end person-->
+            </div>
+            <!--end second-->
+        </div>
+        <!--end two div-->
+
+    </div>
+    <!--end fifth slide-->
+
+    <!--sixth slide-->
+    <div class="sixth_slide">
+        <!--input line-->
+        <div class="input-line">
+            <!--title-->
+            <h1>
+                Get the latest news, events & more <br>
+                delivered to your inbox.
+            </h1>
+            <!--end title-->
+
+            <!--input-->
+            <input type="email" placeholder="Your email address">
+            <!--end input-->
+        </div>
+        <!--end input line-->
+
+        <!--clothes-->
+        <div class="clothes1">
+            <img src="clothes1.png" alt="1">
+            <img src="clothes2.png" alt="2">
+            <img src="clothes3.png" alt="3">
+            <img src="clothes4.png" alt="4">
+            <img src="clothes5.png" alt="5">
+        </div>
+        <!--end clothes-->
+    </div>
+    <!--end sixth slide-->
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer1">
+            <h1>Design your next favorite <br>
+                custom shirt</h1>
+
+                <div>
+                <img src="List → Item → Link.png" alt="1">
+                <img src="List → Item → Link (1).png" alt="2">
+                <img src="List → Item → Link (2).png" alt="3">
+                <img src="List → Item → Link (3).png" alt="4">
+                </div>
+        </div>
+
+        <div class="footer2">
+            <!--first row-->
+            <div class="get_in_touch">
+                <h2>Get in touch</h2>
+                <p>hello@teespace.io</p>
+                <h4>+02 036 038 3996</h4>
+                <p>3665 Paseo Place, Suite 0960 <br>
+                    San Diego</p>
+            </div>
+            <!--end first row-->
+
+            <!--second row-->
+            <div class="Information">
+                <h2>Infomation</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Our Blog</li>
+                    <li>Start a Return</li>
+                    <li>Contact Us</li>
+                    <li>Shipping FAQs</li>
+                </ul>
+            </div>
+            <!--end second row-->
+
+            <!--third row-->
+            <div class="useful_links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li>My Account</li>
+                    <li>Shipping</li>
+                    <li>Contact & Support</li>
+                    <li>All Products</li>
+                </ul>
+            </div>
+            <!--end third row-->
+        </div>
+    </div>
+    <!--end footer-->
+
+    <!--last line-->
+    <div class="last">
+        <!--text-->
+        <div>
+            <p>© 2022 TeeSpace</p>
+            <div class="bbb">
+                <p>Terms & Conditions</p>
+                <div></div>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <!--end text-->
+
+        <!--image-->
+        <img src="apps.png" alt="apps">
+        <!--end image-->
+    </div>
+    <!--end last line-->
+</body>
+</html>
